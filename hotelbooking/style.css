@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient( to right , #dfe9f3, #ffffff);
+}
+header{
+    background-color: #003580;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+
+}
+.hero {
+    text-align: center;
+    padding: 20vh 5vw;
+    background-image: url(hotelimg.webp);
+    background-size: cover;
+    color: white;
+    background-position: center;
+}
+footer {
+    background-color: #003580;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+}
+.rooms {
+    padding: 40px;
+    text-align: center;
+}
+.rooms h2 {
+    font-size: 2.5em;
+    color: #003580;
+}
+.room-card {
+    display: inline-block;
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+    max-width: 300px;
+}
+.room-card img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+.room-card h3{
+    margin: 10px 0 5px;
+    color: #003580;
+}
+.price {
+    font-weight: bold;
+    color: #008000;
+}
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: left;
+}
+.features li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+.book-bnt {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #003580;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.book-bnt:hover {
+    background-color: #0050a0;
+}
+.booking {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+.booking h2 {
+    text-align: center;
+    color: #003580;
+    margin-bottom: 20px;
+
+}
+.booking-form {
+    display: flex;
+   flex-direction: column;
+
+}
+.booking-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+.booking-form input,
+.booking-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.booking-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #003580;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.booking-form button:hover {
+    background-color: #0050a0;
+}
+.contact {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.contact h2 {
+    text-align: center;
+    color: #003580;
+    margin-bottom: 10px;
+}
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+    flex-direction: column;
+}
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+}
+.contact-info h3 {
+    margin-top: 15px;
+    color: #003580;
+}
+.contact-form {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #003580;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #0050a0;
+}
+.map {
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+@media (max-width:768px) {
+    nav a{
+        display: block;
+        margin:10px 0;
+    }
+}
+@media(max-width:480px) {
+    header h1 {
+        font-size: 24px;
+    }
+    nav a {
+        font-size: 16px;
+    }
+    .hero {
+        padding: 100px 20px;
+        font-size: 14px;
+    }
+    .hero h2 {
+        font-size: 20px;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+}
+

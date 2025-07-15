@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Hotel Paradise</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <header>
+        <h1>Hotel Paradise</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+    <section class="booking">
+        <h2>Book Your Stay</h2>
+        <form class="booking-form" action="#">
+            <label for="name"> Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="phone"> phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="checkin">Check-In Date</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-Out Date</label>
+            <input type="date" id="checkkout" name="checkout" required>
+
+            <label for="roomtype">Room Type</label>
+            <select name="roomtype" id="roomtype" required>
+                <option value="">-- select --</option>
+                <option value="standard">Standard Room</option>
+                <option value="delux">Delux Room</option>
+                <option value="suite">Suite Room</option>
+            </select>
+            <label for="guest">Number Of Guest</label>
+            <input type="number" name="guests" id="guests">
+
+            <button type="submit">Book Now</button>
+
+
+        </form>
+
+    </section>
+     <footer>
+        <p>&copy; 2025 Hotel Paradise. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
